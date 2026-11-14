@@ -1,0 +1,3 @@
+in the NASA power data, they overestimated our regions precipitation by 25-41% so we multiplied by a scalar of 0.75 to correct for this.
+This brings one limitation to the model: When applying it to other regions in further expansions, this scalar will most likely need to change
+or even be removed.
