@@ -7,8 +7,7 @@ FILL_VALUE = -999.0
 CACHE_DIR = "cache"
 
 # NASA POWER precipitation was 28-41% above published long-term averages
-# at Ritzville, Davenport and Pullman (ratio of totals 1.33).
-# Regional correction; see LIMITATIONS.md.
+# Regional correction; see limitations.txt
 PRECIP_SCALE = 0.75
 
 NAMES = {
