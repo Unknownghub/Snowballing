@@ -2,7 +2,7 @@ import pandas as pd
 from power import get_daily_weather
 
 FROST_C = 0.0   # a frost day: minimum air temperature at or below 0 C
-HOT_C = 30.0    # DESIGN CHOICE, not from the research: shown for information only
+HOT_C = 30.0    # design choice, not from the research: shown for information only
 
 WINTER_MONTHS = [9, 10, 11, 12, 1, 2, 3]
 
