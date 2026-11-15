@@ -1,4 +1,6 @@
+"""Facts about each crop. Every number has a source; None means no source was found.
 
+critical_ph is (low, high): the published critical soil pH range for the crop."""
 
 CROPS = {
     "winter_wheat": {
@@ -58,8 +60,8 @@ CROPS = {
         "residue": "low",         # about half of wheat's (Lopez-Bellido et al. 2005, Spain)
     },
     "canola": {
-        "name": "Canola", "species": "canola", "group": "oilseed",
-        "season": "winter", "legume": False,
+        "name": "Spring canola", "species": "canola", "group": "oilseed",
+        "season": "spring", "legume": False,
         "critical_ph": None,      # better than legumes on acid soil, but manganese-sensitive (WSU)
         "return_years": 3,        # European guidance (France 3, Germany 3-4)
         "residue": "low",         # more blowing dust after oilseeds (cited in Schillinger 2017)
@@ -90,3 +92,9 @@ TRITICALE_VS_WINTER_WHEAT = 86 / 75                # Ritzville trial, Crops & So
 # Winter wheat after a crop instead of fallow, compared with after fallow (kg/ha).
 WW_LOSS_AFTER_PULSE_KG = 325                       # Maaz et al. 2017
 WW_LOSS_AFTER_OILSEED_KG = 600                     # Maaz et al. 2017
+
+# One farm, one year: WSU Wilke farm, Davenport, 2023 (Esser and Appel 2024).
+# Spring wheat 38.7 bu/acre = 2,603 kg/ha; spring barley 1.43 short tons/acre = 3,206 kg/ha;
+# spring canola 1,600 lb/acre = 1,793 kg/ha. Weak evidence: use with a warning.
+BARLEY_VS_SPRING_WHEAT = 3206 / 2603
+CANOLA_VS_SPRING_WHEAT = 1793 / 2603
